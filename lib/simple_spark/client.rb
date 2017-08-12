@@ -128,6 +128,10 @@ module SimpleSpark
       Endpoints::Templates.new(self)
     end
 
+    def recipient_lists
+      Endpoints::RecipientLists.new(self)
+    end
+
     def transmissions
       Endpoints::Transmissions.new(self)
     end
